@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Krishna Sumanth">
+    <meta name="description" content="This is my developer page">
+    <title>USD to INR Currency Converter</title>
+    <link href="styles/usdtoinr.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="usdtoinr.html">USD to INR</a></li>
+    </ul>
+
+
+    <form class="my-form">
+        <h2>Converion of US Dollars to Indian Rupees</h2>
+        <h3>Enter USD :</h3> <input id="c" type="text"></br></br>
+        <h3>INR :</h3><input type="text" id="d" readonly="true"><br><br>
+        <button type="button" id="convert" onclick="convertinr()">Convert</button></br><br>
+    </form>
+
+<script>
+    
+    function convertinr() {
+        if (document.getElementById("c").value != " ") {
+            var f = document.getElementById("c").value * 1 * 72;
+            document.getElementById("d").value = Math.round(f);
+        } else {
+            document.getElementById("d").value = "please enter the usd in above textbox";
+        }
+    }
+</script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+</body>
+<footer>
+    <div>
+        <p> &copy Copyrighted by Krishna Sumanth</p>
+    </div>
+</footer>
+
+</html>
