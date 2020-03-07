@@ -1,15 +1,15 @@
-/*const convertinr = (c) => { return x }*/
+const convertinr = (c) => { return c * 72 }
 
-function convertinr() {
+// function convertinr() {
 
-    if (document.getElementById("c").value != " ") {
-        var f = document.getElementById("c").value * 1 * 72;
-        localStorage.setItem("m",document.getElementById("c").value);
-        document.getElementById("d").value = Math.round(f);
-    } else {
-        document.getElementById("d").value = "please enter the usd in above textbox";
-    }
-}
+//     if (document.getElementById("c").value != " ") {
+//         var f = document.getElementById("c").value * 1 * 72;
+//         localStorage.setItem("m",document.getElementById("c").value);
+//         document.getElementById("d").value = Math.round(f);
+//     } else {
+//         document.getElementById("d").value = "please enter the usd in above textbox";
+//     }
+// }
 document.getElementById("c").value = localStorage.getItem("m");
 
 const updateWithJoke = async (event) => {
